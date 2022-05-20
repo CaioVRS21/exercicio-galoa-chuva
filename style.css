@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/*=== GERAL =================================*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
+@media (max-width: 768px){
+    #sidemenu{
+        display: none;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #FFB354;
+    --secondary-color: #FDF1EB;
+    --darker-primary: #965f1d;
+    
+    
+  
+    font-size: 62.5%; /* 1rem = 10px */
+  
+    --nav-height: 7.2rem;
+  }
+  
+  html {
+    /* chrome://flags/#smooth-scrolling */
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+  
+    text-align: center;
+  
+    overflow: overlay;
+  
+    background-color: white;
+  }
+
+/*=== MENU =================================*/
+#sidemenu{
+    box-shadow: 1px 10px 8px #888888;
+    width: 220px;
+    height: 100%;
+    float: left;
+    
+}
+#sidemenu #slaca{
+    width: 220px;
+    height: 68px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+}
+
+#sidemenu #slaca h1{
+    margin: auto;
+    padding: 15px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 35px;
+  
+
+    color: #FDF1EB;
+}
+
+#sidemenu #meusLinks{
+    text-align: left;
+    height: 100%;
+
+    background-color: #FDF1EB;
+}
+
+#sidemenu #meusLinks li{
+    padding: 7px 90px 7px 20px;
+
+    border-bottom: 1px solid #E7E7E7;
+
+    cursor: pointer;
+}
+
+#sidemenu #meusLinks li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+/*=== CABEÇALHO =================================*/
+header#cabecalho{
+    display: flex;
+    height: 68px;
+    /* width: 100%; */
+
+    background-color: #FDF1EB;
+
+    font-style: normal;
+    padding-top: 5px;
+}
+#cabecalho #titulos{
+    text-align: left;
+    padding-left: 25px;
+}
+
+#cabecalho #lado-dir button{
+    background: none;
+    width: 90px;
+    height: 34px;
+
+    margin-top: 15px;
+    margin-left: 20px;
+
+    border: 2px solid black;
+    border-color: #CCCC;
+  
+}
+
+#cabecalho #bem-vindo{
+    display: flex;
+    position: absolute;
+    width: 202px;
+    height: 34px;
+    left: 1050px;
+    top: 17px;
+
+}
+
+#cabecalho #bem-vindo #login{
+    text-align: right;
+    margin-right: 6px;
+}
+
+#cabecalho h1, h4, p{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    color: #725C5C;
+    
+}
+#cabecalho h1{
+    font-size: 22px;
+}
+
+#cabecalho h4{
+    font-size: 14px;
+}
+
+#cabecalho p{
+    font-size: 14px;
+}
+
