@@ -22,9 +22,7 @@
      */
     
   
-    font-size: 62.5%; /* 1rem = 10px */
-  
-    --nav-height: 7.2rem;
+    --nav-height: 115px;
   }
   
   html {
@@ -34,20 +32,27 @@
   
   html,
   body {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
+    overflow-x: hidden;
   }
   
   body {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.6rem;
-  
+    
     text-align: center;
-  
-    /* overflow: overlay; */
   
     background-color: white;
   }
+  main{
+    margin-left: 250px;
+  }
+
+  footer{
+      margin-top: 50px;
+  }
+
 button{
     cursor: pointer;
 }
@@ -56,11 +61,11 @@ button{
     box-shadow: 1px 10px 8px #888888;
     width: 220px;
     height: 100%;
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
     left: 0;
-    /* float: left; */
+    
     
 }
 #sidemenu #slaca{
@@ -102,7 +107,7 @@ button{
 }
 
 /*=== CABEÇALHO =================================*/
-header#cabecalho{
+#cabecalho{
     display: flex;
     height: 68px;
 
@@ -117,34 +122,6 @@ header#cabecalho{
     padding-left: 25px;
 }
 
-#cabecalho #lado-dir button{
-    background: none;
-    width: 90px;
-    height: 34px;
-
-    margin-top: 15px;
-    margin-left: 100px;
-
-    border: 2px solid black;
-    border-color: #CCCC;
-  
-}
-
-#cabecalho #bem-vindo{
-    display: flex;
-    position: absolute;
-    width: 202px;
-    height: 34px;
-    /* left: 1050px; */
-    margin-left: 220px;
-    top: 17px;
-
-}
-
-#cabecalho #bem-vindo #login{
-    text-align: right;
-    margin-right: 6px;
-}
 
 #cabecalho h1, h4, p{
     font-family: 'Roboto', sans-serif;
@@ -165,9 +142,40 @@ header#cabecalho{
     font-size: 14px;
 }
 
+#cabecalho #lado-dir{
+    display: flex;
+    margin-left: 50px;
+    
+}
+#lado-dir #btnIdioma{
+    width: 97px;
+    height: 34px;
+
+    margin-top: 17px;
+
+    background: none;
+
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#cabecalho #lado-dir #login{
+    display: flex;
+    text-align: right;
+
+    margin: 15px 0px 0px 60px;
+}
+
+
+#login .login-texto{
+    margin-right: 10px;
+}
+
 /*=== CORPO DO SITE =================================*/
 #corpo{
-    padding-left: 245px;
     margin-top: 20px;
 }
 #corpo h1{
@@ -263,7 +271,6 @@ border-radius: 10px;
     padding: 15px;
 }
 #corpo #sidebar p{
-
     font-size: 14px;
 }
 
@@ -271,7 +278,154 @@ border-radius: 10px;
 
 #resumo{
     width: 1058px;
-    height: 189px;
+
+    margin-top: 19px;
+    margin-bottom: 30px;
 
     text-align: left;
+
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
 }
+
+#resumo h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 1058px;
+
+    padding: 10px 15px 10px 15px;
+
+    color: #725C5C;
+    background-color: #FDF1EB;
+}
+
+#resumo .txtResumo{
+    padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+/*=== ÁREA DO CAMPO DE DISCUSSÕES   =================================*/
+#discussoes{
+    width: 1058px;
+
+
+    text-align: left;
+
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+}
+
+#discussoes h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 1058px;
+
+    padding: 10px 15px 10px 15px;
+
+    color: #725C5C;
+    background-color: #FDF1EB;
+}
+
+#discussoes #conteudo-disc{
+    width: 1058px;
+
+    padding-top: 15px;
+    padding-bottom: 27px;
+    text-align: center;
+}
+
+#discussoes #conteudo-disc h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #ED7839;
+
+}
+
+#discussoes #conteudo-disc img{
+    padding: 27px 54px 35px 27px;
+}
+
+#discussoes #conteudo-disc button{
+    width: 150px;
+
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+#discussoes .caixa-topico{
+    width: 1028px;
+
+    margin: 17px 15px;
+
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+#discussoes .caixa-topico .caixa-cabecalho{
+    margin: 17px 24px 10px 25px;
+}
+
+#discussoes .caixa-topico .caixa-cabecalho h4{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ED7839;
+}
+
+
+#discussoes .caixa-topico .caixa-cabecalho h5{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #5C5C5C;
+}
+
+#discussoes .caixa-topico .caixa-corpo{
+    margin: 0px 25px 11px 24px;
+}
+
+#discussoes .caixa-topico .caixa-corpo p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #4D4D4D;
+}
+
+#discussoes .caixa-topico .caixa-botoes{
+    display: flex;
+    align-items: center;
+}
+
+#discussoes .caixa-topico .caixa-botoes .like-resp{
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+#discussoes .caixa-topico .caixa-botoes button{
+    background: none;
+
+    border: none;
+}
+
+
