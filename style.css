@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
   }
   
   :root {
@@ -34,7 +35,7 @@
   body {
     max-width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   
   body {
@@ -216,8 +217,12 @@ button{
     margin-left: 150px;
 }
 #corpo #como-citar p{
-    color: #ED7839;
+    font-size: 16px;
     font-weight: bold;
+
+    color: #ED7839;
+    
+    margin-top: 12px;
 }
 
 /*=== ÁREA DO VIDEO DE APRESENTAÇÃO E BARRA LETRAL =================================*/
@@ -288,6 +293,17 @@ border-radius: 10px;
     border-radius: 3px;
 }
 
+#resumo a{
+    color: #ED7839;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+#resumo a:hover{
+    text-decoration: underline;
+}
 #resumo h2{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -317,15 +333,98 @@ border-radius: 10px;
     border-radius: 3px;
 }
 
+#discussoes #novoComent{
+    display: none;
+    width: 1058px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#discussoes #novoComent #inserirDados{
+    width: 1058px;
+    text-align: left;
+
+    margin-left: 17px;
+}
+
+#discussoes #novoComent #inserirDados h4{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    margin-top: 10px;
+}
+
+#discussoes #novoComent #inserirDados input{
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+#discussoes #novoComent #inserirDados #assunto{
+    width: 1025px;
+    height: 39px;
+}
+
+#discussoes #novoComent #inserirDados #txtComp{
+    width: 1025px;
+    height: 80px;
+    
+}
+
+#discussoes #novoComent #inserirDados #botoesForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1025px;
+    height: 31px;
+
+    background: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px 0px 4px 4px;
+}
+#discussoes #novoComent #inserirDados #botoesForm{
+    cursor: pointer;
+}
+
+#discussoes #novoComent #inserirDados #botoesForm #btnBold{
+   margin: 0px 30px 5px 30px;
+}
+
+#discussoes #novoComent #inserirDados #botoesForm #btnIta{
+    margin-bottom: 4px;
+}
+
+#discussoes #novoComent #inserirDados #botoesForm #btnEnviar{
+    width: 205px;
+    height: 31px;
+
+    margin-bottom: 8px;
+
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+
+    border: none;
+    border-radius: 0px 0px 4px 0px;
+
+}
+
 #discussoes h2{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    text-align: left;
     width: 1058px;
 
     padding: 10px 15px 10px 15px;
 
     color: #725C5C;
     background-color: #FDF1EB;
+}
+#discussoes h4{
+    color: #ED7839;
+}
+#discussoes p{
+    font-size: 14px;
+    
 }
 
 #discussoes #conteudo-disc{
@@ -374,6 +473,8 @@ border-radius: 10px;
     border: 1px solid #E7E7E7;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+
+    cursor: pointer;
 }
 
 #discussoes .caixa-topico .caixa-cabecalho{
@@ -400,6 +501,7 @@ border-radius: 10px;
 }
 
 #discussoes .caixa-topico .caixa-corpo{
+    width: 980.67px;
     margin: 0px 25px 11px 24px;
 }
 
@@ -428,4 +530,77 @@ border-radius: 10px;
     border: none;
 }
 
+#comentario{
+    display: none;
+}
+#comentario2{
+    display: none;
+}
 
+#caixa_novo_coment{
+    display: none;
+}
+
+.caixa-resposta-autor{
+    width: 1010px;
+
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+}
+
+.cr-autor-cabecalho{
+    display: flex;
+    
+}
+
+.cra-cabecalho2{
+    display: flex;
+    align-items: center;
+    margin-left: 650px;
+}
+
+.caixa-resposta-autor h5{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+
+    margin: 18px 23px 10px 23px;
+
+    color: #5C5C5C;
+}
+
+.caixa-resposta-autor #autor {
+    font-size: 18px;
+    color: #ED7839;
+}
+
+.caixa-resposta-autor p{
+    margin: 0px 23px 35px 23px;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.caixa-resposta-comum{
+    width: 1010px;
+
+    background: #ffffff;
+    border: 1px solid #E7E7E7;
+}
+
+.caixa-resposta-comum h5{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    margin: 18px 23px 10px 23px;
+
+    color: #5C5C5C;
+}
+
+.caixa-resposta-comum p{
+    margin: 0px 23px 35px 23px;
+
+    font-size: 14px;
+    line-height: 18px;
+}

@@ -126,15 +126,132 @@
                    <img src="./media/icone2.png" alt="perguntas e respostas">
                    <img src="./media/icone3.png" alt="pessoas tendo uma ideia">
                    <br>
+                   <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                    <hr id="linha-reta">
-                   <button><svg id="icone" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                   <button id="criarComent" onclick="mostrarForm()"><svg id="icone" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="7" width="3" height="17" rx="1" fill="white"/>
                     <rect y="10" width="3" height="17" rx="1" transform="rotate(-90 0 10)" fill="white"/>
                     </svg>
                      criar tópico</button>
                </div>
+               <div id="novoComent">
+                   <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                   <form action="" id="inserirDados">
+                       <h4>Assunto</h4><br>
+                       <input id="assunto" type="text" placeholder="Defina um tópico sucinto para notificar os autores">
+                       <h4>Conteudo</h4><br>
+                       <input type="text" id="txtComp">
+                       <div id="botoesForm">
+                           <div id="botoesEsquerda">
+                            <svg id="btnBold" width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.23417 10H0.832764V0H7.0006C8.32208 0.00844415 9.5837 0.313975 10.5087 0.849572C11.4337 1.38517 11.9466 2.1071 11.9349 2.857C11.9349 3.52706 11.5251 4.17634 10.7753 4.694C11.7015 5.01926 12.4178 5.50561 12.8174 6.08061C13.217 6.65561 13.2786 7.28848 12.9929 7.88494C12.7073 8.4814 12.0897 9.00953 11.2322 9.39066C10.3747 9.77179 9.3231 9.98551 8.23417 10ZM4.53347 5.714V8.572H7.59976C8.20185 8.53245 8.75278 8.36081 9.13478 8.09377C9.51678 7.82673 9.69953 7.48549 9.64396 7.143C9.6995 6.80035 9.51651 6.45898 9.13415 6.19191C8.75178 5.92485 8.20041 5.75331 7.598 5.714H4.53347ZM4.53347 1.428V4.286H6.48955C7.07884 4.23866 7.61253 4.06303 7.97763 3.79631C8.34273 3.52959 8.51058 3.19272 8.44564 2.857C8.51058 2.52128 8.34273 2.18441 7.97763 1.91769C7.61253 1.65097 7.07884 1.47534 6.48955 1.428H4.53347Z" fill="#474747"/>
+                                </svg>
+                            <svg id="btnIta" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.4339 0V0.714H12.8637L6.43813 9.286H9.00835V10H0.0125732V9.286H2.58279L9.00835 0.714H6.43813V0H15.4339Z" fill="#474747"/>
+                                </svg>
+                           </div>
+                           <div id="btnDir">
+                               <button id="btnEnviar" onclick="concluirComent()">Enviar</button>
+                           </div>
+                       </div>
+                   </form>
+                </div>
+               
+                <div class="caixa-topico" id="caixa_novo_coment" >
+                    <div class="caixa-cabecalho">
+                        <h4>Assunto da pergunta aparece aqui</h4>
+                        <h5>Carlos Herique santos</h5>
+                    </div>
+ 
+                    <div class="caixa-corpo">
+                        <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                    </div>
+ 
+                    <div class="caixa-botoes">
+                     <button>
+                         <svg width="4" height="18" viewBox="0 0 4 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <circle cx="2" cy="16" r="2" fill="#ED7839"/>
+                             <circle cx="2" cy="9" r="2" fill="#ED7839"/>
+                             <circle cx="2" cy="2" r="2" fill="#ED7839"/>
+                             </svg>
+                     </button>
+ 
+                     <button><svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <g filter="url(#filter0_dd_316_601)">
+                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C2.89543 2 2 2.89543 2 4V19C2 20.1046 2.89543 21 4 21H27C28.1046 21 29 20.1046 29 19V4C29 2.89543 28.1046 2 27 2H4Z" fill="#ED7839"/>
+                         </g>
+                         <path d="M15 17.4414L14.1523 16.6758C13.1862 15.8008 12.4844 15.1536 12.0469 14.7344C11.6094 14.3151 11.1172 13.7956 10.5703 13.1758C10.0417 12.556 9.67708 12 9.47656 11.5078C9.27604 10.9974 9.17578 10.4779 9.17578 9.94922C9.17578 9.05599 9.47656 8.29948 10.0781 7.67969C10.6979 7.0599 11.4635 6.75 12.375 6.75C13.4323 6.75 14.3073 7.16016 15 7.98047C15.6927 7.16016 16.5677 6.75 17.625 6.75C18.5365 6.75 19.293 7.0599 19.8945 7.67969C20.5143 8.29948 20.8242 9.05599 20.8242 9.94922C20.8242 10.6602 20.5872 11.3984 20.1133 12.1641C19.6393 12.9297 19.1198 13.5951 18.5547 14.1602C18.0078 14.7253 17.1055 15.5729 15.8477 16.7031L15 17.4414Z" fill="white"/>
+                         <defs>
+                         <filter id="filter0_dd_316_601" x="0" y="0" width="31" height="25" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                         <feOffset dy="2"/>
+                         <feGaussianBlur stdDeviation="1"/>
+                         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"/>
+                         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_316_601"/>
+                         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                         <feOffset/>
+                         <feGaussianBlur stdDeviation="1"/>
+                         <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+                         <feBlend mode="normal" in2="effect1_dropShadow_316_601" result="effect2_dropShadow_316_601"/>
+                         <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_316_601" result="shape"/>
+                         </filter>
+                         </defs>
+                         </svg>
+                         </button>
+ 
+                         <span class="like-resp">1 like</span>
+                         <span class="like-resp">1 resposta</span>
+                    </div>
+                    <div id="comentario">
+                        <div class="caixa-resposta-autor">
+                            <div class="cr-autor-cabecalho">
+                                <h5>Adriano da Silva</h5>
+                                <div class="cra-cabecalho2">
+                                    <h5 id="autor">Autor</h5>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                     <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                     </svg>
+                                </div>
+                            </div>
+                             <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                         </div>
+                         <div class="caixa-resposta-comum">
+                             <h5>Carlos Henrique Santos</h5>
+                             <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br> <br>
+                             Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                         </div>
+                         <div class="caixa-resposta-autor">
+                             <div class="cr-autor-cabecalho">
+                                 <h5>Carmila Ferreira Andrade</h5>
+                                 <div class="cra-cabecalho2">
+                                     <h5 id="autor">Coautor</h5>
+                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                      </svg>
+                                 </div>
+                             </div>
+                              <p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                  <br>
+                                  <br>
+                              Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..</p>
+                          </div>
+                          <div class="caixa-resposta-autor">
+                             <div class="cr-autor-cabecalho">
+                                 <h5>Ana Carolina</h5>
+                                 <div class="cra-cabecalho2">
+                                     <h5 id="autor">Coautor</h5>
+                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                      </svg>
+                                 </div>
+                             </div>
+                              <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                          </div>
+                    </div>
+                 </div>
 
-               <div class="caixa-topico">
+               <div class="caixa-topico" onclick="mostrarComent()" >
                    <div class="caixa-cabecalho">
                        <h4>Assunto da pergunta aparece aqui</h4>
                        <h5>Carlos Herique santos</h5>
@@ -180,9 +297,56 @@
                         <span class="like-resp">1 like</span>
                         <span class="like-resp">1 resposta</span>
                    </div>
-               </div>
+                   <div id="comentario">
+                       <div class="caixa-resposta-autor">
+                           <div class="cr-autor-cabecalho">
+                               <h5>Adriano da Silva</h5>
+                               <div class="cra-cabecalho2">
+                                   <h5 id="autor">Autor</h5>
+                                   <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                    </svg>
+                               </div>
+                           </div>
+                            <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                        </div>
+                        <div class="caixa-resposta-comum">
+                            <h5>Carlos Henrique Santos</h5>
+                            <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br> <br>
+                            Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                        </div>
+                        <div class="caixa-resposta-autor">
+                            <div class="cr-autor-cabecalho">
+                                <h5>Carmila Ferreira Andrade</h5>
+                                <div class="cra-cabecalho2">
+                                    <h5 id="autor">Coautor</h5>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                     <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                     </svg>
+                                </div>
+                            </div>
+                             <p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                 <br>
+                                 <br>
+                             Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..</p>
+                         </div>
+                         <div class="caixa-resposta-autor">
+                            <div class="cr-autor-cabecalho">
+                                <h5>Ana Carolina</h5>
+                                <div class="cra-cabecalho2">
+                                    <h5 id="autor">Coautor</h5>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                     <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                     </svg>
+                                </div>
+                            </div>
+                             <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                         </div>
+                   </div>
+                </div>
+               
 
-               <div class="caixa-topico">
+               <div class="caixa-topico" onclick="mostrarComent2()">
                 <div class="caixa-cabecalho">
                     <h4>Assunto da pergunta aparece aqui</h4>
                     <h5>Carlos Herique santos</h5>
@@ -227,6 +391,52 @@
 
                      <span class="like-resp">1 like</span>
                      <span class="like-resp">1 resposta</span>
+                </div>
+                <div id="comentario2">
+                    <div class="caixa-resposta-autor">
+                        <div class="cr-autor-cabecalho">
+                            <h5>Adriano da Silva</h5>
+                            <div class="cra-cabecalho2">
+                                <h5 id="autor">Autor</h5>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                 </svg>
+                            </div>
+                        </div>
+                         <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                     </div>
+                     <div class="caixa-resposta-comum">
+                         <h5>Carlos Henrique Santos</h5>
+                         <p>Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br> <br>
+                         Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                     </div>
+                     <div class="caixa-resposta-autor">
+                         <div class="cr-autor-cabecalho">
+                             <h5>Carmila Ferreira Andrade</h5>
+                             <div class="cra-cabecalho2">
+                                 <h5 id="autor">Coautor</h5>
+                                 <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                  </svg>
+                             </div>
+                         </div>
+                          <p>Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                              <br>
+                              <br>
+                          Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo..</p>
+                      </div>
+                      <div class="caixa-resposta-autor">
+                         <div class="cr-autor-cabecalho">
+                             <h5>Ana Carolina</h5>
+                             <div class="cra-cabecalho2">
+                                 <h5 id="autor">Coautor</h5>
+                                 <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20.6212 7.33594L19.0587 5.8125C18.7072 5.42188 18.0822 5.42188 17.7306 5.8125L8.39465 15.1484L4.01965 10.8125C3.66809 10.4219 3.08215 10.4219 2.69153 10.8125L1.16809 12.3359C0.777466 12.7266 0.777466 13.3125 1.16809 13.6641L7.73059 20.2266C8.08215 20.6172 8.66809 20.6172 9.01965 20.2266L20.5822 8.66406C20.9728 8.3125 20.9728 7.72656 20.6212 7.33594ZM7.9259 11.4766C8.16028 11.75 8.58997 11.75 8.82434 11.4766L16.9493 3.35156C17.1837 3.11719 17.1837 2.72656 16.9493 2.45312L15.1915 0.695312C14.9181 0.460938 14.5275 0.460938 14.2931 0.695312L8.39465 6.63281L6.20715 4.44531C5.97278 4.21094 5.58215 4.21094 5.34778 4.44531L3.5509 6.20312C3.31653 6.47656 3.31653 6.86719 3.5509 7.10156L7.9259 11.4766Z" fill="#ED7839"/>
+                                  </svg>
+                             </div>
+                         </div>
+                          <p>Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.</p>
+                      </div>
                 </div>
             </div>
         </div>
