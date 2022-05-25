@@ -11,6 +11,15 @@
     body{
         width: 100vw;
     }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
     #sidemenu{
         display: none;
     }
@@ -32,6 +41,62 @@
     
         margin-top: 20px;
     }
+
+    #corpo #sidebar{
+        width: 375px !important;
+
+        text-align: left !important;
+    }
+
+    #corpo #sidebar h1{
+        width: 100%;
+    }
+
+    #resumo{
+        width: 375px !important;
+
+        margin-top: 20px!important;
+        margin-bottom: 20px!important;
+    }
+
+    #discussoes{
+        width: 375px !important;
+
+        margin-bottom: 20px!important;
+    } 
+    
+    #discussoes #conteudo-disc{
+        width: 375px;
+    }
+
+    #discussoes #novoComent{
+        width: 375px !important;
+    }
+
+    #discussoes #inserirDados{
+        width: 375px !important;
+    }
+
+    #discussoes #inserirDados input{
+        width: 375px !important;
+    }
+
+    #discussoes #inserirDados #botoesForm{
+        width: 375px !important;
+        margin-left: 0px !important;
+        overflow: hidden !important;
+    }
+
+    #discussoes #inserirDados #botoesEsquerda{
+        margin: 0px !important;
+    }
+
+    #discussoes #inserirDados #btnDir{
+        margin: 0px !important;
+        padding: 0px !important;
+        overflow: hidden !important;
+    }
+    
 }
 
 
