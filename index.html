@@ -56,8 +56,10 @@
    <main>
    <!-- CORPO PRINCIPAL DO SITE -->
    <section id="corpo">
+       <!-- CABEÇALHO DO CORPO  -->
        <div id="inicio-corpo">
            <h1>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h1>
+           <!-- CAMPO DE CITAÇÃO -->
             <div id="como-citar">
                 <button id="download"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.75 0H9.25C9.45833 0 9.63542 0.0729167 9.78125 0.21875C9.92708 0.364583 10 0.541667 10 0.75V6H12.75C13.0208 6 13.2083 6.13542 13.3125 6.40625C13.4167 6.65625 13.375 6.875 13.1875 7.0625L8.4375 11.8125C8.3125 11.9375 8.16667 12 8 12C7.83333 12 7.6875 11.9375 7.5625 11.8125L2.8125 7.0625C2.625 6.875 2.58333 6.65625 2.6875 6.40625C2.79167 6.13542 2.97917 6 3.25 6H6V0.75C6 0.541667 6.07292 0.364583 6.21875 0.21875C6.36458 0.0729167 6.54167 0 6.75 0ZM16 11.75V15.25C16 15.4583 15.9271 15.6354 15.7812 15.7812C15.6354 15.9271 15.4583 16 15.25 16H0.75C0.541667 16 0.364583 15.9271 0.21875 15.7812C0.0729167 15.6354 0 15.4583 0 15.25V11.75C0 11.5417 0.0729167 11.3646 0.21875 11.2188C0.364583 11.0729 0.541667 11 0.75 11H5.34375L6.875 12.5312C7.1875 12.8438 7.5625 13 8 13C8.4375 13 8.8125 12.8438 9.125 12.5312L10.6562 11H15.25C15.4583 11 15.6354 11.0729 15.7812 11.2188C15.9271 11.3646 16 11.5417 16 11.75ZM11.9375 14.9375C12.0625 14.8125 12.125 14.6667 12.125 14.5C12.125 14.3333 12.0625 14.1875 11.9375 14.0625C11.8125 13.9375 11.6667 13.875 11.5 13.875C11.3333 13.875 11.1875 13.9375 11.0625 14.0625C10.9375 14.1875 10.875 14.3333 10.875 14.5C10.875 14.6667 10.9375 14.8125 11.0625 14.9375C11.1875 15.0625 11.3333 15.125 11.5 15.125C11.6667 15.125 11.8125 15.0625 11.9375 14.9375ZM13.9375 14.9375C14.0625 14.8125 14.125 14.6667 14.125 14.5C14.125 14.3333 14.0625 14.1875 13.9375 14.0625C13.8125 13.9375 13.6667 13.875 13.5 13.875C13.3333 13.875 13.1875 13.9375 13.0625 14.0625C12.9375 14.1875 12.875 14.3333 12.875 14.5C12.875 14.6667 12.9375 14.8125 13.0625 14.9375C13.1875 15.0625 13.3333 15.125 13.5 15.125C13.6667 15.125 13.8125 15.0625 13.9375 14.9375Z" fill="white"/>
@@ -73,6 +75,7 @@
                 <p>COMO CITAR ESSE TRABALHO?</p>
             </div>
         </div>
+        <!-- ÁREA DA FOTO COM A CAIXA DE INFO LATERAL  -->
            <div id="foto-side">
                <img src="./media/vídeo apresentação.png" alt="video de apresentação">
                <div id="sidebar">
@@ -99,7 +102,7 @@
                    </div>
                </div>
            </div>
-
+            <!-- CAIXA DE RESUMO  -->
            <div id="resumo">
                <h2>Resumo</h2>
                 <div>
@@ -118,6 +121,7 @@
                 </div>
            </div>
 
+           <!-- ÁREA DE DISCUSSÃO E COMENTÁRIOS  -->
            <div id="discussoes">
                <h2>Discussões</h2>
                <div id="conteudo-disc">
@@ -134,6 +138,7 @@
                     </svg>
                      criar tópico</button>
                </div>
+               <!-- FORMULÁRIO DE CRIAÇÃO DE NOVO COMENTÁRIO  -->
                <div id="novoComent">
                    <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                    <form action="" id="inserirDados">
@@ -157,15 +162,15 @@
                    </form>
                 </div>
                
+                <!-- NOVO COMENTÁRIO  -->
                 <div class="caixa-topico" id="caixa_novo_coment" >
-                    <div id="overlay"></div>
                     <div class="caixa-cabecalho">
-                        <h4>Assunto da pergunta aparece aqui</h4>
-                        <h5>Carlos Herique santos</h5>
+                        <h4 id="assunto_novo_coment"></h4>
+                        <h5>Você</h5>
                     </div>
  
                     <div class="caixa-corpo">
-                        <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <p id="txt_novo_coment"></p>
                     </div>
  
                     <div class="caixa-botoes">
@@ -201,13 +206,14 @@
                          </svg>
                          </button>
  
-                         <span class="like-resp">1 like</span>
-                         <span class="like-resp">1 resposta</span>
+                         <span class="like-resp">0 like</span>
+                         <span class="like-resp">0 resposta</span>
                     </div>
     
                     
                  </div>
 
+                 <!-- COMENTÁRIOS E RESPOSTAS DOS COMENTÁRIOS  -->
                <div class="caixa-topico" onclick="mostrarComent()">
                    <div class="caixa-cabecalho">
                        <h4>Assunto da pergunta aparece aqui</h4>
@@ -398,6 +404,7 @@
             </div>
         </div>
 
+        <!-- RODAPÉ  -->
         <footer>
             <img src="./media/footer.png" alt="">
         </footer>
