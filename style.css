@@ -35,9 +35,10 @@
         width: 100% !important;
         height: auto !important;
         position: relative !important;
+        box-shadow: none !important;
     }
 
-    #sidemenu img{
+    #sidemenu img, #sidemenu #meusLinks{
         display: none;
     }
 
@@ -204,6 +205,14 @@
 
     #comentario .caixa-resposta-autor{
         width: 375px !important;
+    }
+
+    #comentario .caixa-resposta-comum{
+        width: 375px !important;
+    }
+
+    #comentario .caixa-resposta-comum h5{
+        margin: 0!important;
     }
 
     #comentario .cr-autor-cabecalho{

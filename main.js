@@ -51,3 +51,13 @@ function mostrarComent2(){
     comentario2.style.display = "none";
   }
 }
+
+function mostrarMenu(){
+  const meusLinks = document.getElementById('meusLinks')
+  let tamanhoTela = window.innerWidth;
+  if (tamanhoTela <= 768 && meusLinks.style.display === "none"){
+    meusLinks.style.display = "block";
+  } else {
+    meusLinks.style.display = "none";
+  }
+}
