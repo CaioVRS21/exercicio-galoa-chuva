@@ -9,31 +9,36 @@ $(document).ready(function() {
 });
 
 function mostrarForm(){
-    var x = document.getElementById('novoComent')
-    var y = document.getElementById('conteudo-disc')
-  if (x.style.display === "none" && y.style.display === "block") {
+    let x = document.getElementById('novoComent')
+    let y = document.getElementById('conteudo-disc')
+    let z = document.getElementById('caixa_novo_coment')
     x.style.display = "block";
     y.style.display = "none";
-  } else {
-    x.style.display = "none";
-    y.style.display = "block";
-  }
+    // z.style.display = "block";
 }
+//   if (x.style.display === "none" && y.style.display === "block" && z.style.display === "none") {
+//     x.style.display = "block";
+//     y.style.display = "none";
+//     z.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//     y.style.display = "block";
+//     z.style.display = "none";
+//   }
+// }
 
 function concluirComent(){
-    var y = document.getElementById('conteudo-disc')
-    var z = document.getElementById('caixa_novo_coment')
-    if (y.style.display === "none" && z.style.display === "none") {
-        y.style.display = "block";
-        z.style.display === "block";
-      } else {
-        y.style.display = "none";
-        z.style.display === "none"
-      }
+  let x = document.getElementById('novoComent')
+  let y = document.getElementById('conteudo-disc')
+  let z = document.getElementById('caixa_novo_coment')
+  x.style.display = "none";
+  y.style.display = "block";
+  z.style.display = "block";
+
 }
 
 function mostrarComent(){
-    var x = document.getElementById('comentario')
+  let x = window.document.getElementById('comentario')
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -42,7 +47,7 @@ function mostrarComent(){
 }
 
 function mostrarComent2(){
-    var x = document.getElementById('comentario2')
+    let x = document.getElementById('comentario2')
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
