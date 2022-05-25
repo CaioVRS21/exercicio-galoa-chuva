@@ -47,6 +47,9 @@ function mostrarComent2(){
     const comentario2 = document.getElementById('comentario2')
   if (comentario2.style.display === "none") {
     comentario2.style.display = "block";
+  } else {
+    comentario2.style.display = "none";
+  }
 }
 
 function mostrarMenu(){
