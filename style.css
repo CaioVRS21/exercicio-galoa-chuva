@@ -2,31 +2,92 @@
 
 /*=== GERAL =================================*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
+@media (max-width: 425px){
+    footer img{
+    width: 425px !important;
+    height: 67px !important;
+    }
+
+}
 @media (max-width: 768px){
     *{
         margin: auto !important;
         overflow-x: hidden;
     }
-
     body{
-        width: 100vw;
+        width: 100vw !important;
     }
 
     h2{
-        font-size: 30px;
+        font-size: 30px !important;
     }
 
     h3{
-        font-size: 25px;
+        font-size: 25px !important;
+    }
+
+    p{
+        font-size: 10px !important;
     }
 
     #sidemenu{
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+    }
+
+    #sidemenu img{
         display: none;
     }
 
-    #cabecalho{
-        /* display: none !important;  */
+    #slaca{
+        width: 100% !important;
     }
+
+    #cabecalho{
+        flex-direction: column;
+        height: 125px !important;
+    }
+
+    #lado-dir{
+        align-items: space-between !important;
+
+        width: 375px !important;
+    }
+
+    #login{
+        margin-left: 0px !important;
+    }
+
+    #titulos{
+        padding-left: 10px !important;
+    }
+
+    #titulos h4{
+        font-size: 12px !important;
+    }
+
+    #titulos h1{
+        font-size: 15px !important;
+    }
+
+    #inicio-corpo{
+        flex-direction: column;
+
+        width: 375px !important;
+    }
+
+    #inicio-corpo h1{
+        width: 360px !important;
+        font-size: 15px !important;
+    }
+
+    #btnIdioma{
+        font-size: 10px !important;
+        margin-left: 0px !important;
+    }
+
 
     #videoApresentacao{
         width: 450px;
@@ -48,8 +109,8 @@
         text-align: left !important;
     }
 
-    #corpo #sidebar h1{
-        width: 100%;
+    #corpo #sidebar h3{
+        width: 100% !important;
     }
 
     #resumo{
@@ -66,7 +127,7 @@
     } 
     
     #discussoes #conteudo-disc{
-        width: 375px;
+        width: 375px !important;
     }
 
     #discussoes #novoComent{
@@ -97,9 +158,70 @@
         overflow: hidden !important;
     }
     
-}
+    #discussoes .caixa-topico{
+        width: 375px !important;
+    }
+
+    .caixa-topico .caixa-cabecalho{
+        width: 375px !important;
+    }
+
+    .caixa-cabecalho h4{
+        font-size: 15px !important;
+    }
+
+    .caixa-cabecalho h5{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .caixa-topico .caixa-corpo{
+        width: 375px !important;
+    }
+
+    .caixa-topico .caixa-botoes{
+        width: 375px !important;
+    }
+
+    .caixa-topico .like-resp{
+        font-size: 15px !important;
+
+        width: 375px !important;
+    }
+
+    .caixa-topico #comentario{
+        width: 375px !important;
+    }
+
+    #comentario h5{
+        width: 250px;
+        font-size: 13px !important;
+    }
+
+    #comentario p{
+        font-size: 12px !important;
+    }
+
+    #comentario .caixa-resposta-autor{
+        width: 375px !important;
+    }
+
+    #comentario .cr-autor-cabecalho{
+        width: 375px !important;
+        
+    }
 
 
+    #comentario .cra-cabecalho2{
+        width: 375px !important;
+        
+    }
+
+    footer img{
+        width: 768px !important;
+        height: 121px !important;
+    }
+    }
 * {
     margin: 0;
     padding: 0;
@@ -150,6 +272,7 @@ button{
     cursor: pointer;
 }
 /*=== MENU =================================*/
+
 #sidemenu{
     box-shadow: 1px 10px 8px #888888;
     width: 220px;
