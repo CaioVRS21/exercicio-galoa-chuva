@@ -14,12 +14,13 @@
 <body>
     <!-- MENU DE NAVEGAÇÃO -->
    <div id="sidemenu">
-       <div id="slaca" onclick="mostrarMenu()">
+       <div id="slaca">
            <h1>SLACA 2019</h1>
+           <img src="./media/menu-ham.png" alt="menu-ham" id="menuHam" onclick=mostrarMenu()>
        </div>
        <img src="./media/dewey 4.png" alt="logo">
 
-       <ul id="meusLinks">
+       <ul id="meusLinks" onresize="manterMenu()">
            <li><a href="#">Apresentação</a></li>
            <li><a href="#">Comitês</a></li>
            <li><a href="#">Autores</a></li>

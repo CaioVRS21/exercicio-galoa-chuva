@@ -4,15 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap');
 @media (max-width: 425px){
     footer img{
-    width: 425px !important;
-    height: 67px !important;
+    width: 320px !important;
+    height: 51px !important;
     }
 
 }
 @media (max-width: 768px){
     *{
         margin: auto !important;
-        overflow-x: hidden;
     }
     body{
         width: 100vw !important;
@@ -36,6 +35,14 @@
         height: auto !important;
         position: relative !important;
         box-shadow: none !important;
+    }
+
+    #slaca{
+        display: flex;
+    }
+
+    #menuHam{
+        display: block !important;
     }
 
     #sidemenu img, #sidemenu #meusLinks{
@@ -77,6 +84,8 @@
         flex-direction: column;
 
         width: 375px !important;
+
+        margin: 15px auto 15px auto !important;
     }
 
     #inicio-corpo h1{
@@ -89,7 +98,15 @@
         margin-left: 0px !important;
     }
 
+    #corpo #como-citar{
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
+    }
+    #como-citar p{
+        margin-top: 5px !important;
 
+        font-size: 15px !important;
+    }
     #videoApresentacao{
         width: 450px;
         height: 252px;
@@ -227,10 +244,11 @@
     }
 
     footer img{
-        width: 768px !important;
-        height: 121px !important;
+        width: 425px !important;
+        height: 67px !important;
     }
     }
+
 * {
     margin: 0;
     padding: 0;
@@ -239,12 +257,6 @@
   }
   
   :root {
-    /* --primary-color: #FFB354;
-    --secondary-color: #FDF1EB;
-    --darker-primary: #965f1d;
-     */
-    
-  
     --nav-height: 115px;
   }
   
@@ -267,7 +279,6 @@
     text-align: center;
   
     background-color: white;
-    /* overflow-x: hidden; */
   }
   main{
     margin-left: 250px;
@@ -297,6 +308,12 @@ button{
     width: 220px;
     height: 68px;
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+}
+
+#menuHam{
+    display: none;
+
+    cursor: pointer;
 }
 
 #sidemenu #slaca h1{
@@ -829,4 +846,9 @@ border-radius: 10px;
 
     font-size: 14px;
     line-height: 18px;
+}
+
+footer img{
+    width: 1024px;
+    height: 162px;
 }
