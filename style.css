@@ -143,6 +143,15 @@
 
         margin-bottom: 20px!important;
     } 
+
+    #discussoes h2{
+        width: 375px !important;
+    }
+
+    #resumo h2{
+        width: 375px !important;
+    }
+    
     
     #discussoes #conteudo-disc{
         width: 375px !important;

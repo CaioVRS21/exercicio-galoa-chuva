@@ -55,18 +55,16 @@ function mostrarComent2(){
 function mostrarMenu(){
   const meusLinks = document.getElementById('meusLinks')
   let tamanhoTela = window.innerWidth;
-  if (tamanhoTela < 769 && meusLinks.style.display === "none"){
+  // console.log(tamanhoTela)
+  if (tamanhoTela <= 768 && meusLinks.style.display === "none"){
     meusLinks.style.display = "block";
-  } 
-  else {
+    console.log(tamanhoTela)
+  } else{
     meusLinks.style.display = "none";
   }
 }
 
-function manterMenu(){
-  const meusLinks = document.getElementById('meusLinks')
-  let tamanhoTela = window.innerWidth;
 
-  if (tamanhoTela > 769 && meusLinks.style.display === "none")
-    meusLinks.style.display = "block";
-}
+
+
+
